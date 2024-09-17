@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+html {
+  font-size: var.$font-family-base;
+}
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+  // padding-top: 56px; // Offset for fixed navbar
+}
+
+h1 {
+  font-size: var.$heading-size-bigger;
+
+  @include mix.mobile-l-styles {
+  font-size: var.$heading-size-big;
+  }
+}
