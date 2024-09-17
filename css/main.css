@@ -33,7 +33,7 @@ body {
   line-height: 1.5;
   max-width: 100%;
   overflow-x: hidden;
-     padding-top: 56px;
+  padding-top: 56px;
 }
 
 
@@ -105,4 +105,11 @@ h1 {
 }
 }
 
+.zoom-effect {
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
 
+.zoom-effect:hover {
+  transform: scale(1.05);
+}
