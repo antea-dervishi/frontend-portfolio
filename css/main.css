@@ -31,9 +31,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.5;
- /* padding-top: 56px;*/
   max-width: 100%;
   overflow-x: hidden;
+     padding-top: 56px;
 }
 
 
@@ -54,6 +54,7 @@ h1 {
   height:60vh;
   background-size: cover;
   background-position: center;
+
 }
 
 .card.bg-light-blue {
@@ -75,21 +76,33 @@ h1 {
   }
 }
 
-.focus-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-.focus-card:hover, .focus-card:focus-within {
-  transform:  translateY(-0.7em);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-}
+@media (min-width: 480px) {
+  .focus-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .focus-card:hover, .focus-card:focus-within {
+    transform:  translateY(-0.7em);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .focus-card:hover p, .focus-card:focus-within p {
+    color: #0d6efd; 
+  }
 
-.focus-card:hover p, .focus-card:focus-within p {
-  color: #0d6efd; 
-}
-
-@media (max-width: 425px) {
- .hero{
-  height: 40vh;
+ 
  }
+
+@media (max-width: 480px) {
+ .hero{
+  height: 50vh;
+ }
+
+ .iframe{
+  width: 90%;
+  height: fit-content;
 }
+}
+
+
