@@ -110,3 +110,16 @@ h1 {
 .zoom-effect:hover {
   transform: scale(1.05);
 }
+
+
+.custom-link-hover:hover,
+.custom-link-hover:focus{
+  color: #0a47a3 ; 
+  
+}
+
+.back-to-top:hover{
+text-decoration: underline !important;
+}
+
+
