@@ -100,11 +100,16 @@ h1 {
   width: 90%;
   height: fit-content;
 }
+.zoom-effect {
+  transform: none !important; 
+}
+
 }
 
 .zoom-effect {
   transition: transform 0.3s ease;
   transform: scale(1);
+  object-fit: cover;
 }
 
 .zoom-effect:hover {
@@ -115,11 +120,13 @@ h1 {
 .custom-link-hover:hover,
 .custom-link-hover:focus{
   color: #0a47a3 ; 
-  
+  cursor: pointer;
 }
 
 .back-to-top:hover{
 text-decoration: underline !important;
 }
+
+
 
 
