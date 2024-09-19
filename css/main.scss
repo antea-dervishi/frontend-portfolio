@@ -3,3 +3,7 @@
 @use 'abstracts/variables';
 @use 'abstracts/mixins';
 
+$secondary-bg-subtle: #f1f3f5  !important;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
