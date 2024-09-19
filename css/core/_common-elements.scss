@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+@use 'sass:math';
 
 html {
   font-size: var.$font-family-base;
@@ -9,8 +10,9 @@ body {
   font-family: var.$font-family-base;
   font-weight: var.$font-weight-normal;
   line-height: var.$line-height-base;
-  // padding-top: 56px; // Offset for fixed navbar
+  padding-top:3.5em;
 }
+
 
 h1 {
   font-size: var.$heading-size-bigger;
@@ -19,3 +21,40 @@ h1 {
   font-size: var.$heading-size-big;
   }
 }
+
+.custom-link-hover:hover,
+.custom-link-hover:focus{
+  color: #0a47a3 ; 
+  cursor: pointer;
+}
+
+.back-to-top:hover{
+text-decoration: underline !important;
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease;
+  transform: scale(1);
+  object-fit: cover;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 480px) {
+   
+      transform: none !important; 
+   }
+}
+
+
+@media (max-width: 480px) {
+  .iframe{
+   width: 90%;
+   height: fit-content;
+ }
+
+ }
+ 
+
+ 
