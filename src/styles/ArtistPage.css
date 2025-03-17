@@ -1,0 +1,41 @@
+
+.artist-page {
+    width: 33.3%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    background: #ddd;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    border-top: 0.7em solid cyan;
+  }
+  
+  .artist-image2 {
+    width: 33%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+  }
+  
+  
+  .artist-bio {
+    font-size: 1rem;
+    padding: 0 1em;
+    margin-top: 0.5em;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    padding-top: 0.7em;
+  }
+  
+  @media (max-width: 768px) {
+    .artist-page {
+      width: 100%;
+    }
+  }
+  

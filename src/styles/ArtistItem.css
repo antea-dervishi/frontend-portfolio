@@ -1,0 +1,23 @@
+
+.artist-item {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.artist-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.artist-name {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #3380b1;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
