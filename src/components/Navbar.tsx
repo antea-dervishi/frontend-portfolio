@@ -1,14 +1,21 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import './Navbar.css';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="navbar w-50">
-      <div className="overlay">
-        <h1 className="title">MUSIC DB</h1>
+    <nav className="navbar">
+      <div className="navbar-left">
+        <Link to="/" className="navbar-logo">RESTAURANT</Link>
       </div>
-      <img src="/images/raw/Girls-Listen-Music_0.jpg" alt="Music Background" className="navbar-image" />
+      <div className="navbar-right">
+        <Link to="/favorites" className="navbar-favorite">
+          <FontAwesomeIcon icon={faHeart} />
+        </Link>
+      </div>
     </nav>
   );
 };

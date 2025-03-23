@@ -1,0 +1,31 @@
+
+.cuisine-buttons-home {
+    text-align: center;
+    padding-bottom:2em;
+    border-bottom: 2px solid #ddddddad;
+  }
+  
+  .cuisine-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+  }
+  
+  .cuisine-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .cuisine-button {
+    background-color: #ff6247;
+    color: white;
+    padding: 0.7em 1.2em;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }

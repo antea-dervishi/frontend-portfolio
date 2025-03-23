@@ -1,0 +1,53 @@
+.restaurant-detail {
+    margin: 0 ;
+  }
+
+  .restaurant-detail h1{
+    text-align: center;
+  }
+  
+  .detail-image {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
+  }
+
+  .restaurant-detail-2 {
+    background-color: #f5f5f5 ;
+    border-radius: 10px;
+  }
+
+  .text-detail{
+    padding:0 1em ;
+    padding-bottom:0.5em;
+  }
+ 
+
+  .review-form{
+    display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #ddddddad;
+  padding-bottom: 1.5em;
+  }
+  
+  .review-form label{
+    margin:0.7em 0;
+  }
+
+.submit{
+  margin:0.7em 0;
+  height:35px;
+  background-color: #008001;
+  color:white;
+  border:none;
+  border-radius: 5px;
+}
+  
+.reviews >*{
+  background-color: #f5f5f5 ;
+  border-radius: 10px;
+  margin-bottom:1em;
+  padding: 0.5em ;
+}

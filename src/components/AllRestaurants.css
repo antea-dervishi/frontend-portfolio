@@ -1,0 +1,16 @@
+.all-restaurants {
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+ padding:1em 0;
+    gap: 1.2em;
+    border-bottom: 2px solid #ddddddad;
+    padding-bottom:2em;
+  }
+
+  .all-restaurants-title {
+   text-align: center;
+   margin-bottom: 0.5em;
+  text-transform:uppercase ;
+ }
+ 

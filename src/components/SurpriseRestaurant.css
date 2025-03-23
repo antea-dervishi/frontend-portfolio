@@ -1,0 +1,32 @@
+.surprise-container {
+    text-align: center;
+    width: 100%;
+    padding-bottom:2em;
+    border-bottom: 2px solid #ddddddad;
+  }
+  
+  .surprise-container h2{
+   text-transform: uppercase;
+   font-size: 2rem;
+   font-weight: bold;
+  }
+  
+  
+  .surprise-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .surprise-button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    width:100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+  }
+  

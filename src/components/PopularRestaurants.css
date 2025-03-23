@@ -1,0 +1,20 @@
+
+  
+  .popular-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .popular-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ padding:1em 0;
+ padding-bottom: 2em;
+    gap: 1.2em;
+    border-bottom: 2px solid #ddddddad;
+  }
+  

@@ -1,22 +1,44 @@
+
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { RestaurantProvider } from './context/RestaurantContext';
 import Navbar from './components/Navbar';
-import ArtistsList from './components/ArtistsList';
-import ArtistPage from './components/ArtistPage';
-import AlbumPage from './components/AlbumPage';
-import artists from './data/db';
-import './App.css'; 
+import Footer from './components/Footer';
+import AllRestaurants from './components/AllRestaurants';
+import RestaurantDetail from './components/RestaurantDetail';
+import PopularRestaurants from './components/PopularRestaurants';
+import SurpriseRestaurant from './components/SurpriseRestaurant';
+import Cuisines from './components/Cuisines';
+import CuisineDetail from './components/CuisineDetail';
+import Favorites from './components/Favorites';
+import './App.css';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <RestaurantProvider>
+      <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<ArtistsList artists={artists} />} />
-          <Route path="/artist/:id" element={<ArtistPage artists={artists} />} />
-          <Route path="/album/:albumId" element={<AlbumPage artists={artists} />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <SurpriseRestaurant />
+                <PopularRestaurants />
+                <Cuisines />
+                <AllRestaurants />
+              </>
+            }
+          />
+          <Route path="/restaurants/:id" element={<RestaurantDetail />} />
+          <Route path="/popular" element={<PopularRestaurants />} />
+          <Route path="/cuisine/:type" element={<CuisineDetail />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="*" element={<p>404 - Page Not Found</p>} />
         </Routes>
-    </Router>
+        <Footer />
+      </Router>
+    </RestaurantProvider>
   );
 };
 
